@@ -10,22 +10,6 @@ Submitted to *Symmetry* (MDPI), 2026.
 
 ---
 
-## Simulation Preview
-
-![Live V2I environment: RSUs, moving vehicles, active sessions](results/environment_overview.png)
-
-![UPQ-PAKE simulation animation](results/simulation_animation.gif)
-
-| Computational Overhead | Communication Overhead |
-|---|---|
-| ![Computational overhead](results/figure3_computational_overhead.png) | ![Communication overhead](results/figure4_communication_overhead.png) |
-
-| Authentication Delay | Scalability Delay |
-|---|---|
-| ![Authentication delay](results/figure5_authentication_delay.png) | ![Scalability delay](results/figure6_scalability_delay.png) |
-
----
-
 ## Introduction
 
 Vehicular networks rely on continuous V2V/V2I message exchange for traffic safety, but conventional ECC/RSA-based authentication is broken by quantum adversaries via Shor's algorithm. This repository presents **UPQ-PAKE**, a scheme that combines dynamic session-specific pseudonyms, NIST-standardized post-quantum primitives (**ML-DSA-65** for signatures, **ML-KEM-768** for key encapsulation), and a single transcript-bound authenticated key exchange to deliver mutual authentication, dual-directional session-key establishment, forward secrecy, and unlinkability suitable for large-scale, real-time IoV deployments.
@@ -122,6 +106,20 @@ python run_environment.py    # frames + GIF + event log + parameters
 
 See `simulation_docs/SIMULATION_README.md` for the full methodology, what is executed for real versus modelled/calibrated, and a side-by-side table of reproduced values against the paper's reported figures.
 
+## Simulation Results
+
+![Live V2I environment: RSUs, moving vehicles, active sessions](results/environment_overview.png)
+
+![UPQ-PAKE simulation animation](results/simulation_animation.gif)
+
+| Computational Overhead | Communication Overhead |
+|---|---|
+| ![Computational overhead](results/figure3_computational_overhead.png) | ![Communication overhead](results/figure4_communication_overhead.png) |
+
+| Authentication Delay | Scalability Delay |
+|---|---|
+| ![Authentication delay](results/figure5_authentication_delay.png) | ![Scalability delay](results/figure6_scalability_delay.png) |
+
 ## Funding
 
 This work is derived from a research grant funded by Taibah University, Madinah, Kingdom of Saudi Arabia (grant number 448-16-1216).
@@ -133,3 +131,11 @@ No conflict of interest.
 ## Acknowledgments
 
 We thank all collaborators and institutions contributing to this research work.
+
+## References
+
+[2] Rajasekaran, A.S.; Das, A.K.; Maria, A.; Ahmed, G.F.; Merlec, M.M.; In, H.P.; Pal, S. PQ-AuthV: Post-Quantum Secure Authentication with Aggregated Signatures in IoT-Enabled Smart Vehicle Networks. *IEEE Internet of Things Journal* 2026, 13. https://doi.org/10.1109/JIOT.2026.3688913
+
+[12] Raja, G.; Theerthagiri, S.; Raja, K.; Ramanujam, J.A.; Sadhasivam, T.; Vasudevan, P.; Arumugam, P.; Khowaja, S.A.; Dev, K. PQAKA: Post Quantum Authentication and Key Agreement Protocol for Intelligent Internet of Vehicles over 5G. *IEEE Open Journal of the Communications Society* 2026, 7, 196–210. https://doi.org/10.1109/OJCOMS.2025.3643607
+
+[34] Liu, Z.; Yao, N.; Bai, S.; et al. A Cooperative ECC-Based Authentication Protocol for VANETs. *Scientific Reports* 2025, 15, 40837. https://doi.org/10.1038/s41598-025-24663-8
