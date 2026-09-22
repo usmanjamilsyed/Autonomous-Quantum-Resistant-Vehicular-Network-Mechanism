@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment (recreate with: py -m venv venv_automis --system-site-packages)
+venv_automis/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# working artifacts
+paper_text.txt
+pdf_pages/

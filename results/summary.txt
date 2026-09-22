@@ -1,0 +1,47 @@
+========================================================================
+UPQ-PAKE simulation - Section 6 reproduction
+========================================================================
+
+Measured primitive costs on this machine (ms):
+    TSign   :    74.556
+    TVerify :    21.627
+    TEncap  :     7.733
+    TDecap  :     9.760
+    TKGen   :     4.936
+    TH      :     0.001
+    THKDF   :     0.013
+    sign_ec :     1.043
+    verify_ec:     3.824
+    ecmul   :     0.149
+
+Proposed UPQ-PAKE measured cost : veh 188.3 ms, rsu 135.3 ms (pure Python)
+Platform normalisation          : K_veh=0.0611  K_rsu=0.0902
+
+Figure 3 - computational overhead (ms):
+    ECC-Based : veh   5.46 (paper   4.9)   rsu   5.94 (paper   5.3)
+    PQAKA     : veh  10.90 (paper  10.6)   rsu  11.50 (paper  11.4)
+    UPQ-PAKE  : veh  11.50 (paper  11.5)   rsu  12.20 (paper  12.2)
+
+Figure 4 - communication overhead (KB):
+    ECC-Based :    3.21 KB (paper 3.2 KB)
+    PQAKA     :    7.20 KB (paper 7.2 KB)
+    UPQ-PAKE  :   19.88 KB (paper 19.88 KB)
+
+Figure 5 - authentication delay (ms):
+    ECC-Based :  10.55 (paper 9.5)
+    PQAKA     :  19.40 (paper 18.7)
+    UPQ-PAKE  :  23.10 (paper 22.8)
+
+Figure 6 - authentication delay vs vehicles (DES, 20 runs, mean +/- std):
+    N=100: Liu et al.   9.9+/- 0.1   PQAKA  11.3+/- 0.1   UPQ-PAKE  12.3+/- 0.1
+    N=200: Liu et al.  17.1+/- 0.1   PQAKA  19.0+/- 0.1   UPQ-PAKE  20.1+/- 0.1
+    N=300: Liu et al.  24.3+/- 0.1   PQAKA  26.7+/- 0.1   UPQ-PAKE  28.0+/- 0.1
+    N=400: Liu et al.  31.5+/- 0.2   PQAKA  34.4+/- 0.2   UPQ-PAKE  35.8+/- 0.2
+    N=500: Liu et al.  38.7+/- 0.2   PQAKA  42.2+/- 0.2   UPQ-PAKE  43.8+/- 0.2
+
+Attack simulation (real protocol verifier):
+    Replay success rate (50 attempts x10 trials): 0.0%
+    MITM success rate   (30 attempts x10 trials): 0.0%
+    Pseudonym linkability (dictionary guess)    : 0.0%
+
+Done. Outputs written to ./results/

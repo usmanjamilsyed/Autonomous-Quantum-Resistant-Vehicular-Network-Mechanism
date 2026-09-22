@@ -1,0 +1,27 @@
+Parameter,Configuration
+Processor,"Intel Core i7-12700 (12th Gen, 2.10-4.90 GHz)"
+RAM,16 GB DDR4
+Operating System,Ubuntu 22.04 LTS (paper) / Windows sim host
+Python Version,Python 3.x (pure-Python PQ backend)
+Cryptographic Library,kyber-py 1.2.0 / dilithium-py 1.4.0 (paper: liboqs 0.14.0)
+ML-KEM Parameter Set,ML-KEM-768 (FIPS 203)
+ML-DSA Parameter Set,ML-DSA-65 (FIPS 204)
+Hash Function,SHA3-256
+Key Derivation Function,HKDF-SHA3
+Security Level,NIST Security Level 3
+Simulator,Python DES (paper: OMNeT++ 6.1 + SUMO 1.20.0)
+Network Type,Vehicle-to-Infrastructure (V2I)
+Communication Standard,IEEE 802.11p / 5G NR-V2X
+Simulation Area,1000 m x 1000 m
+Number of Vehicles,50-500 (performance); 40 (visual demo)
+Number of RSUs,5-20 (performance); 6 (visual demo)
+Vehicle Speed,20-200 km/h
+RSU Coverage,300 m (V2I range)
+PCert Pool per Vehicle,8 short-lived pseudonym credentials
+Auth Tuple Size,"19,884 B (Table 7 byte-exact)"
+Freshness Window,30 s timestamp validity
+Simulation Duration,300-600 s (perf); 30 s (visual demo)
+Independent Runs,20 per configuration
+epk / ct / ss (ML-KEM),1184 B / 1088 B / 32 B
+pk / sig (ML-DSA),1952 B / 3309 B
+Random Seed,"11 (visual), 2026 (performance)"
