@@ -10,6 +10,22 @@ Submitted to *Symmetry* (MDPI), 2026.
 
 ---
 
+## Simulation Preview
+
+![Live V2I environment: RSUs, moving vehicles, active sessions](results/environment_overview.png)
+
+![UPQ-PAKE simulation animation](results/simulation_animation.gif)
+
+| Computational Overhead | Communication Overhead |
+|---|---|
+| ![Computational overhead](results/figure3_computational_overhead.png) | ![Communication overhead](results/figure4_communication_overhead.png) |
+
+| Authentication Delay | Scalability Delay |
+|---|---|
+| ![Authentication delay](results/figure5_authentication_delay.png) | ![Scalability delay](results/figure6_scalability_delay.png) |
+
+---
+
 ## Introduction
 
 Vehicular networks rely on continuous V2V/V2I message exchange for traffic safety, but conventional ECC/RSA-based authentication is broken by quantum adversaries via Shor's algorithm. This repository presents **UPQ-PAKE**, a scheme that combines dynamic session-specific pseudonyms, NIST-standardized post-quantum primitives (**ML-DSA-65** for signatures, **ML-KEM-768** for key encapsulation), and a single transcript-bound authenticated key exchange to deliver mutual authentication, dual-directional session-key establishment, forward secrecy, and unlinkability suitable for large-scale, real-time IoV deployments.
