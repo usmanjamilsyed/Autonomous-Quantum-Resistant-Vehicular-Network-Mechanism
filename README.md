@@ -1,4 +1,4 @@
-# Autonomous UPQ-PAKE: Quantum-Resistant Vehicular Network Mechanism
+# Autonomous UPQ-PAKE: Quantum-Resistant Vehicular Network Scheme
 
 A unified post-quantum pseudonymous authentication and key-establishment (UPQ-PAKE) scheme for secure Vehicle-to-Infrastructure (V2I) communication in Intelligent Transportation Systems (ITS).
 
